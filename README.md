@@ -44,9 +44,9 @@ Follow these steps to perform the buffer overflow attack:
 gdb ./prog
 ```
 
-2. Set Breakpoints: Use - **`br 21`** to set a breakpoint on line 21 where the overflow occurs.
+2. Set Breakpoints: Use  **`br 21`** to set a breakpoint on line 21 where the overflow occurs.
 
-3. Craft the Payload: Input characters that overflow the buffer, followed by the address of the target function (func3()).
+3. Craft the Payload: Input characters that overflow the buffer, followed by the address of the target function **`func3()`**.
 
 4. Run the Exploit: Execute the payload:
 
@@ -55,7 +55,7 @@ printf '23 BBBBBBBBBBBBBBBBBB\x97\x11\x40' > input.txt
 gdb -q -ex "r < ./input.txt" prog
 ```
 
-5. Observe Output: Check that the program redirects execution to func3() and prints the output "Inside func3".
+5. Observe Output: Check that the program redirects execution to **`func3()`** and prints the output **`"Inside func3"`**.
 
 ### For more details, refer to the full project report in the **`docs/`** directory.
 
@@ -71,4 +71,4 @@ This project also examines similar vulnerabilities that can be exploited using b
 For a comprehensive explanation of the project methodology, attack steps, and observations, see the Buffer Overflow Project Report in the docs/ folder.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the **`LICENSE/`** file for details.
