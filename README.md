@@ -72,3 +72,6 @@ For a comprehensive explanation of the project methodology, attack steps, and ob
 
 ## License
 This project is licensed under the MIT License - see the **`LICENSE/`** file for details.
+
+## Acknowledgments
+This project was undertaken as part of a security-focused study on buffer overflow vulnerabilities, contributing to a broader understanding of secure coding practices and exploit prevention.
