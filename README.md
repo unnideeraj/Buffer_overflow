@@ -28,10 +28,7 @@ To compile `prog.c` with specific flags that disable security protections and ma
 ```bash
 gcc src/prog.c -o prog -fno-stack-protector -g -no-pie
 
-
-
-
-## Explanation of Compilation Flags
+### Explanation of Compilation Flags
 - **`-fno-stack-protector`** : Disables stack protection (stack canaries), which usually detect buffer overflows.
 - **`-g`** : Includes debugging information for GDB.
 - **`-no-pie`** : Disables Position Independent Executable, keeping function addresses static for easier debugging and exploitation.
